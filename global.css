@@ -1,0 +1,22 @@
+body {
+  font-family: "fira sans";
+  text-decoration: none;
+  margin: 0px;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}

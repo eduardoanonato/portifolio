@@ -1,0 +1,91 @@
+.experiencia {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+span{
+  color: #525252;
+  font-size: 0.875rem ;
+  font-weight: 400;
+}
+.ano1 {
+  position: absolute;
+  top: 220px;
+  left: 360px;
+}
+.ano2 {
+  position: absolute;
+  top: 395px;
+  left: 360px;
+}
+.ano3 {
+  position: absolute;
+  top: 555px;
+  left: 360px;
+}
+.experiencia h1 {
+  font-size: 9rem;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  line-height: 9rem;
+}
+.expe {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.info {
+  margin-right: 220px;
+
+  padding: 10px 60px 60px 0px;
+  color: #525252;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: left;
+}
+.Projectos {
+  display: grid;
+  background-color: #f0f0f0;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.Projectos h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+.Projectos h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+}
+.Projectos ul {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  place-self: center;
+}
+.Projectos p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.Projectos li {
+  font-size: 0.875rem;
+  padding: 5px;
+  margin: 5px;
+  background-color: #ffffff;
+}
+.Projectos h2::before{
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, red 0%, blue 100%);
+  position: absolute;
+  left: 465px;
+}
