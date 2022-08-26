@@ -29,8 +29,15 @@
   color: #525252
 }
 @media (max-width: 1000px) {
-.introducao h1{
+.introducao{
+  margin: 0 60px
+}
+  .introducao h1{
   font-size: 3rem;
+  gap: 40px;
+}
+.introducao p{
+  font-size: 1.1rem;
   gap: 40px;
 }
   .introducao h1::before{
@@ -45,6 +52,10 @@
   font-size: 2.5rem;
   gap: 30px;
   }
+  .introducao{
+  margin: 0 40px
+}
+ 
   .introducao h1::before{
     width: 30px;
     height: 10px;
@@ -52,9 +63,11 @@
     left: -5px;
   }
 }
-@media (max-width: 500px) {
-  img{
+@media (max-width: 600px) {
+  .introducao img{
     display: none;
     grid-template-columns: 1fr;
   }
+  .introducao{
+align-items: center;
 }

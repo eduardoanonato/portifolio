@@ -4,54 +4,47 @@
   margin: 0 auto;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
-  position: relative;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
-span{
+span {
   color: #525252;
-  font-size: 0.875rem ;
+  font-size: 0.875rem;
   font-weight: 400;
 }
-.ano1 {
+.ano {
   position: absolute;
-  top: 220px;
-  left: 360px;
-}
-.ano2 {
-  position: absolute;
-  top: 395px;
-  left: 360px;
-}
-.ano3 {
-  position: absolute;
-  top: 555px;
-  left: 360px;
+  left: -100px;
+  top: 22px;
 }
 .experiencia h1 {
   font-size: 9rem;
   text-transform: uppercase;
   color: #e0e0e0;
   line-height: 9rem;
+  word-break: break-all;
+  max-width: 4ch;
 }
-.expe {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.info {
-  margin-right: 220px;
-
-  padding: 10px 60px 60px 0px;
+.texto {
+  max-width: 40ch;
+  padding:0px 0px 40px 0px;
   color: #525252;
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: left;
 }
+.texto strong {
+  color: black;
+}
+
 .Projectos {
   display: grid;
   background-color: #f0f0f0;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-bottom: 20px;
   padding: 20px;
+  position: relative;
 }
 .Projectos h2 {
   font-size: 1.125rem;
@@ -66,10 +59,10 @@ span{
 }
 .Projectos ul {
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  place-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-items: center;
 }
 .Projectos p {
   font-size: 0.875rem;
@@ -81,11 +74,33 @@ span{
   margin: 5px;
   background-color: #ffffff;
 }
-.Projectos h2::before{
+.Projectos::before {
   content: "";
+  display: block;
   width: 4px;
   height: 20px;
   background: linear-gradient(180deg, red 0%, blue 100%);
   position: absolute;
-  left: 465px;
+  top: 20px;
+  left: -4px;
+}
+@media (max-width: 1000px) {
+  .texto {
+
+  justify-items: center;
+  }
+  span {
+    display: none;
+  }
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .experiencia h1 {
+    color:#141414;
+    font-size: 4em;
+    line-height: 4.5rem;
+    max-width: initial;
+    text-align: center;
+  }
 }

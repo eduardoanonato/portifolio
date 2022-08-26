@@ -8,77 +8,148 @@
 }
 .info {
   color: #a3a3a3;
-font-size: 1.5rem;
-font-weight: 400;
+  max-width: 40ch;
+  padding: 0px 0px 40px 0px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: cent;
+}
+.info strong {
+  color: #ffffff;
 }
 .formacao {
   background-color: #141414;
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
 .formacao h1 {
   color: #525252;
-  font-size: 9rem;
+  font-size: 8rem;
   text-transform: uppercase;
   line-height: 9rem;
+  word-break: break-all;
+  max-width: 5ch;
+  
 }
-.formacoes{
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 40px;
-  align-items: start;
-}
-.formacoes div{
-  font-size: 1.125rem ;
-  align-items: center;
-  padding: 20px;
+/* span{
   color: #ffffff;
-  background-color: black;
-  display: grid;
-  align-items: center;
-  place-self: center;
-  line-height: 3rem;
+} */
+
+.faculdade-lista {
+  display: flex;
+  gap: 20px;
+  color: #ffffff;
+  flex-wrap: wrap;
 }
-.formacoes div::before{
-  content: "";
-  width: 4px;
-  height: 20px;
-  background: linear-gradient(180deg, red 0%, blue 100%);
-  position: absolute;
-  left: 485px;
-  top: 445px;
+.faculdade {
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  background-color: #000000;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
-.formacoes h2::before{
-  content: "";
-  width: 4px;
-  height: 20px;
-  background: linear-gradient(180deg, red 0%, blue 100%);
-  position: absolute;
-  left: 725px;
-  top: 445px;
-}
-.formacoes h3::before{
-  content: "";
-  width: 4px;
-  height: 20px;
-  background: linear-gradient(180deg, red 0%, blue 100%);
-  position: absolute;
-  left: 970px;
-   top: 445px;
-}
-.formacoes h2{
+.faculdade h3 {
   font-size: 1.125rem;
-  line-height: 2rem;
-margin-bottom: 50px;
-font-weight: 700;
-font-style: normal;
+  line-height: 1.56rem;
+  font-style: normal;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 40px;
 }
-.formacoes h3{
-  font-size: 1.125rem ;
-  line-height: 1.5rem;
+.faculdade span {
+  text-transform: uppercase;
+  line-height: 2rem;
   font-weight: 400;
+  font-style: normal;
+  color: #a3a3a3;
 }
-.formacoes p{
-  font-size: 0.875rem ;
-  line-height: 2rem;
+.faculdade h3::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, red 0%, blue 100%);
+  position: absolute;
+  left: -24px;
+  top: -26x;
 }
+.formacao-extra {
+  grid-column: 2;
+  color: #ffffff;
+  position: relative;
+}
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #8f8f8f;
+  margin-bottom: 20px;
+}
+.cursos {
+  margin-bottom: 60px;
+}
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+}
+.idiomas h3::before {
+  background: url(/img/idiomas.svg);
+}
+.cursos h3::before {
+  background: url(/img/cursos.svg);
+}
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+.formacao-extra span {
+  font-size: 1.125rem;
+}
+@media (max-width: 1000px) { 
+   .back {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    
+    justify-content: center;
+   }
+   .formacao{
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+   .back h1 {
+    display: block;
+    font-size: 4rem;
+    max-width: initial;
+    text-transform: uppercase;
+    text-align: center;
+   }
+   .back p{
+    max-width: initial;
+    margin: 0 100px;
+    font-size: 1.425rem;
+   }
+    /* display: block; */
+   
+  .faculdade h3::before {
+      display: none;
+    }
+    .formacao-extra h3::before{
+      display: none;
+    }
+    .formacao-extra{
+padding-left: 20px;
+padding-bottom: 40px;
+    }
+  
+   }
+}
+  
